@@ -1,0 +1,10 @@
+h1 {
+  padding: 10px;
+  background-color: #222;
+  color: #fff;
+  font-style: italic;
+  font-size: 2em;
+}
+span {
+  color: red;
+}
