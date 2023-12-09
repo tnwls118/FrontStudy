@@ -1,17 +1,23 @@
 * {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
-}  
-#contents {
- background:url("../images/bg.jpg") no-repeat;
- background-size:cover;
- width:800px;
- height:500px;
- margin:0 auto;
+  margin: 0;
+  padding: 0;
 }
-h1 { 
-  color:#fff; 
-  font-size:120px;
-  text-shadow: 2px 3px 0 #000;      
+#contents {
+  background: url("../images/bg.jpg") no-repeat;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  /* 부모 요소에 포지션 기준점을 설정하는 것은 relative이다. */
+}
+h1 {
+  color: #fff;
+  font-size: 120px;
+  text-shadow: 2px 3px 0 #000;
+  position: absolute;
+  /* absolute는 부모 요소를 기준점으로 위치를 조정할 수 있다. */
+  right: 100px;
+  bottom: 100px;
 }
