@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>나이 계산하기</title>
-</head>
-<body>
+    <style>
+      body {
+        font-size: xx-large;
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+    <script>
+      var currentYear = 2023;
+      var birthYear = 2023;
+      var age;
 
-</body>
+      age = currentYear - birthYear;
+      document.write(age);
+
+      var season = ["봄", "여름", "가을", "겨울"];
+      alert(season.length);
+      //조건문은 자바랑 같나?
+      if (currentYear === birthYear) {
+        document.write("true");
+      } else if (currentYear !== birthYear) {
+        document.write("false");
+      }
+    </script>
+  </head>
+  <body></body>
 </html>
