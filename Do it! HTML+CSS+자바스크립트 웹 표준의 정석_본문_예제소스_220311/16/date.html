@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="result"></p>
+  </body>
+  <script>
+    let now = new Date();
+    let firstDay = new Date("1994-04-01");
+
+    let toNow = now.getTime();
+    let toFirst = firstDay.getTime();
+
+    let passedTime = toNow - toFirst;
+    passedTime = Math.round(passedTime / (24 * 60 * 60 * 1000));
+
+    document.querySelector("#result").innerText = passedTime;
+  </script>
+</html>
